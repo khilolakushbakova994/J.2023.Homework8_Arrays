@@ -39,11 +39,10 @@ public class Main {
         // В конце строки запятую ставить не надо.
 
         int[] number1 = {25, 32, 15, 1, 86, 12, 0, 50};
-        for (int i = 0; i < number1.length; i++) {
-            Arrays.sort(number1);
-            System.out.println(Arrays.toString(number1));
-            break;
-        }
+        Arrays.sort(number1);
+        System.out.println(Arrays.toString(number1));
+
+
         int[] number2 = {223, 115, 889, 356, 729, 122, 369};
         Arrays.sort(number2);
         System.out.println(Arrays.toString(number2));
@@ -51,8 +50,8 @@ public class Main {
         double[] number3 = {15.23, 99.56, 112.66669, 99.9999};
         Arrays.sort(number3);
         System.out.println(Arrays.toString(number3));
-
     }
+
 
     public static void task3() {
 
@@ -72,25 +71,20 @@ public class Main {
         Integer[] number1 = {25, 32, 15, 1, 86, 12, 0, 50};
         Arrays.sort(number1, Collections.<Integer>reverseOrder());
         System.out.println(Arrays.toString(number1));
-        for (int i = 86; i < number1.length; i--) {
-            System.out.println(number1[i] + "  ");
-            break;
+        for (int i = number1.length - 1; i >= 0; i--) {
         }
+
         Integer[] number2 = {223, 115, 889, 356, 729, 122, 369};
         Arrays.sort(number2, Collections.<Integer>reverseOrder());
         System.out.println(Arrays.toString(number2));
-        int l;
-        for (l = 889; l < number2.length; l--) {
-            System.out.println(number2[l] + " ");
+        for (int i = number2.length - 1; i >= 0; i--) {
         }
 
 
         Double[] number3 = {15.23, 99.56, 112.66669, 99.9999};
         Arrays.sort(number3, Collections.<Double>reverseOrder());
         System.out.println(Arrays.toString(number3));
-        int m;
-        for (m = 200; m < number3.length; m--) {
-            System.out.println(number3[m]);
+        for (int i = number3.length - 1; i >= 0; i--) {
         }
     }
 
@@ -105,8 +99,8 @@ public class Main {
 
         int[] even = {25, 32, 15, 1, 86, 12, 0, 50};
         for (int p = 0; p < even.length; p++) {
-            if (even [p] % 2 != 0) {
-                even [p] +=1;
+            if (even[p] % 2 != 0) {
+                even[p] += 1;
             }
 
         }
